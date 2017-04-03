@@ -1,0 +1,51 @@
+/** {
+  border: 1px solid red;
+}*/
+
+/*SEARCHBOX STYLES*/
+
+.search {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  }
+
+input {
+  height: 2em;
+  border-radius: 5px;
+  width: 30%;
+  border: 2px solid lightgrey;
+  transition: .3s ease-in-out;
+  padding-left: 1em;
+}
+
+input:focus {
+  outline: none;
+  width: 35%;
+  height: 2.5em;
+  font-size: 16px;
+  transition: .3s ease-in-out;
+  padding-left: 1em;
+}
+
+
+/*LIGHTBOX SLIDESHOW STYLES*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.light img {
+  margin: 1.5em;
+}
+
+.listbox {
+  max-width: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 4em;
+}
