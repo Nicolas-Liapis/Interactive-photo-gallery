@@ -1,6 +1,3 @@
-/** {
-  border: 1px solid red;
-}*/
 
 /*SEARCHBOX STYLES*/
 
@@ -61,6 +58,8 @@ ul {
   margin-right: 2em;
   padding: 0;
 }
+
+/*MEDIA QUERRIES TO KEEP IMAGES IN STRAIGHT LINES REGARDLESS THE SCREEN SIZE*/
 
 @media screen and (min-width: 768px) {
 
