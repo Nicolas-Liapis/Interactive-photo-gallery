@@ -5,17 +5,17 @@ lightbox.option({
   'wrapAround': true
 });
 
-function filterImg() {
 
+document.getElementById("searchB").addEventListener("keyup", filterImg);
+function filterImg() {
     var input, filter, ul, li, a, i;
-    // INPUT FUNCTION TO GET SEARCH ITEM
+    // GET SEARCH KEYWORD
     input = document.getElementById('searchB');
     filter = input.value.toUpperCase();
     //-------------------------------------
     ul = document.getElementById("ulList");
     li = ul.getElementsByTagName('li');
-
-    // LOOPS THROUGH ALL LIST ITEMS TO FIND THE ONE THAT MATCHES
+    // LOOPS THROUGH ALL LIST ITEMS TO FIND THE ONE THAT MATCHES THE KEYWORD
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
