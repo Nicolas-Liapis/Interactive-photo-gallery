@@ -14,28 +14,29 @@
     <header>
       <!-- SEARCH FUNCTION -->
       <div class="search">
-        <input id ="searchFunction" type="text" value="" placeholder="Search">
+        <input id ="searchB" onkeyup="filterImg()" type="text" value="" placeholder="Search">
       </div>
 
     </header>
     <!-- LIGHTBOX GALLERY -->
     <div class="light">
-      <ul class="listbox">
-        <li><a href="photos-large/01.jpg" data-lightbox="roadtrip" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." alt="Hay Bales"><img src="thumbnails/01.jpg"></a></li>
-        <li><a href="photos-large/02.jpg" data-lightbox="roadtrip" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="thumbnails/02.jpg" alt="Lake"></a></li>
-        <li><a href="photos-large/03.jpg" data-lightbox="roadtrip" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="thumbnails/03.jpg" alt="Canyon"></a></li>
-        <li><a href="photos-large/04.jpg" data-lightbox="roadtrip" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="thumbnails/04.jpg" alt="Iceberg"></a></li>
-        <li><a href="photos-large/05.jpg" data-lightbox="roadtrip" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="thumbnails/05.jpg" alt="Desert"></a></li>
-        <li><a href="photos-large/06.jpg" data-lightbox="roadtrip" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img src="thumbnails/06.jpg" alt="Fall"></a></li>
-        <li><a href="photos-large/07.jpg" data-lightbox="roadtrip" data-title="I drove past this plantation yesterday, everything is so green!"><img src="thumbnails/07.jpg" alt="Plantation"></a></li>
-        <li><a href="photos-large/08.jpg" data-lightbox="roadtrip" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="thumbnails/08.jpg" alt="Dunes"></a></li>
-        <li><a href="photos-large/09.jpg" data-lightbox="roadtrip" data-title="We enjoyed a quiet stroll down this countryside lane."><img src="thumbnails/09.jpg" alt="Countryside Lane"></a></li>
-        <li><a href="photos-large/10.jpg" data-lightbox="roadtrip" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="thumbnails/10.jpg" alt="Sunset"></a></li>
-        <li><a href="photos-large/11.jpg" data-lightbox="roadtrip" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="thumbnails/11.jpg" alt="Cave"></a></li>
-        <li><a href="photos-large/12.jpg" data-lightbox="roadtrip" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="thumbnails/12.jpg" alt="Bluebells"></a></li>
+      <ul class="listbox" id="ulList">
+        <li><a href="photos-large/01.jpg" data-lightbox="roadtrip" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="thumbnails/01.jpg"  alt="Hay Bales. I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a></li>
+        <li><a href="photos-large/02.jpg" data-lightbox="roadtrip" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="thumbnails/02.jpg" alt="Lake. The lake was so calm today. We had a great view of the snow on the mountains from here."></a></li>
+        <li><a href="photos-large/03.jpg" data-lightbox="roadtrip" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="thumbnails/03.jpg" alt="Canyon. I hiked to the top of the mountain and got this picture of the canyon and trees below."></a></li>
+        <li><a href="photos-large/04.jpg" data-lightbox="roadtrip" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="thumbnails/04.jpg" alt="Iceberg. It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a></li>
+        <li><a href="photos-large/05.jpg" data-lightbox="roadtrip" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="thumbnails/05.jpg" alt="Desert. The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a></li>
+        <li><a href="photos-large/06.jpg" data-lightbox="roadtrip" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img src="thumbnails/06.jpg" alt="Fall. Fall is coming, I love when the leaves on the trees start to change color."></a></li>
+        <li><a href="photos-large/07.jpg" data-lightbox="roadtrip" data-title="I drove past this plantation yesterday, everything is so green!"><img src="thumbnails/07.jpg" alt="Plantation. I drove past this plantation yesterday, everything is so green!"></a></li>
+        <li><a href="photos-large/08.jpg" data-lightbox="roadtrip" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="thumbnails/08.jpg" alt="Dunes. My summer vacation to the Oregon Coast. I love the sandy dunes!"></a></li>
+        <li><a href="photos-large/09.jpg" data-lightbox="roadtrip" data-title="We enjoyed a quiet stroll down this countryside lane."><img src="thumbnails/09.jpg" alt="Countryside Lane. We enjoyed a quiet stroll down this countryside lane."></a></li>
+        <li><a href="photos-large/10.jpg" data-lightbox="roadtrip" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="thumbnails/10.jpg" alt="Sunset. Sunset at the coast! The sky turned a lovely shade of orange."></a></li>
+        <li><a href="photos-large/11.jpg" data-lightbox="roadtrip" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="thumbnails/11.jpg" alt="Cave. I did a tour of a cave today and the view of the landscape below was breathtaking."></a></li>
+        <li><a href="photos-large/12.jpg" data-lightbox="roadtrip" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="thumbnails/12.jpg" alt="Bluebells. I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a></li>
       </ul>
     </div>
 
     <script src="lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
+</html>

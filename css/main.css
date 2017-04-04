@@ -8,7 +8,10 @@
   display: block;
   text-align: center;
   margin-top: 2em;
-  margin-bottom: 2em;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color:transparent;
   }
 
 input {
@@ -22,7 +25,7 @@ input {
 
 input:focus {
   outline: none;
-  width: 35%;
+  width: 40%;
   height: 2.5em;
   font-size: 16px;
   transition: .3s ease-in-out;
@@ -37,15 +40,48 @@ body {
 }
 
 .light img {
-  margin: 1.5em;
+  padding: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.light {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .listbox {
-  max-width: 80%;
-  list-style: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding-left: 4em;
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .listbox {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .listbox {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .listbox {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
 }
